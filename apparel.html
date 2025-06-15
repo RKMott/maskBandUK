@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MASKbandUK - Apparel</title>
+		<link rel="stylesheet" href="stylesheets/styles.nav.css">
+		<link rel="stylesheet" href="stylesheets/homestyle.css">
+		<link rel="stylesheet" href="stylesheets/stylesheet.css">
+		<link rel="stylesheet" href="stylesheets/apparelstyle.css">
+		<script>
+			// opens us the nav menu when hamburger icon is clicked
+			function dropdownMenu() {
+				var x = document.getElementById("navbutton");
+				if (x.className === "navlist") {
+					x.className += "responsive";
+				}
+				else {
+					x.className = "navlist";
+				}
+			}
+			// provides the slideshow mechanic for the merchandise to show different shots
+			function fposition1() {
+				document.slide.src = "images/longSleeve1.png";
+			}
+			function fposition2() {
+				document.slide.src = "images/longSleeve2.png";
+			}
+			function fposition3() {
+				document.slide2.src = "images/boilersuit1.png";
+			}
+			function fposition4() {
+				document.slide2.src = "images/boilersuit2.png";
+			}
+		</script>
+	</head>
+
+	<body>
+	<!-- Main nav bar -->
+		<nav>
+			<div class="navleft">
+				<a href="index.html">HOME</a>
+				<a href="music.html">MUSIC</a>
+				<a href="apparel.html">APPAREL</a>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+				<img class="maskTextLogo" src="images/masktxt.png" alt="MASK band text logo.">
+			<div class="navright">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<a href="live.html">LIVE</a>
+				<a href="about.html">ABOUT</a>
+				<a href="signUp.html">SIGN UP</a>
+			</div>
+	<!-- Ham Burger button for small nav -->		
+			<div class="smallnav">
+				<img class="navburger" onClick="dropdownMenu()" src="images/HamBurger.png" alt="">
+				<img class="smalllogo" src="images/masklogo.img-text.small.png" alt="MASK band image and text logo, stacked side by side.">
+			</div>
+		</nav>
+	<!-- List for small nav -->
+		<div class="navlist" id="navbutton">
+			<a href="index.html">HOME</a> <br>
+			<a href="music.html">MUSIC</a> <br>
+			<a href="apparel.html">APPAREL</a> <br>
+			<a href="live.html">LIVE</a> <br>
+			<a href="about.html">ABOUT</a> <br>
+			<a href="signUp.html">SIGN UP</a> <br>
+		</div>
+	<!-- Advertisement for the bands new single -->
+		<div class="ad-home">
+			<img class="scarsart" src="images/SCARS-albumART.png" alt="The single art for SCARS by MASK. The image contains a drawn scorpion on a cream background with white border.">
+			<h3 class="scarstext" style="margin-bottom: 31px;">MASK - SCARS<br> AVAILABLE NOW</h3>
+		</div>
+	<!-- Down arrow that scrolls down to the content of the page -->
+		<a href="#scrollDown"><img class="downArrow" src="images/HamBurgerOpen.png" alt=""></a>
+	<!-- Table that allows me to better evenly distribute the contents of the page -->
+		<div class="content">
+			<table>
+				<tr>
+					<td><img id="scrollDown" name="slide" src="images/longSleeve1.png"><br>
+						<a class="myicons" href="#scrollDown" onClick="fposition1()" >&#8226;</a>
+						<a class="myicons" href="#scrollDown" onClick="fposition2()" >&#9702;</a>
+					</td>
+					
+					<td><img name="slide2" src="images/boilersuit1.png"><br>
+						<a class="myicons2" href="#scrollDown" onClick="fposition3()" >&#8226;</a>
+						<a class="myicons2" href="#scrollDown" onClick="fposition4()" >&#9702;</a>
+					</td>
+				</tr>
+				
+				<tr>
+					<td><p class="price">£35</p><p class="tableText">NAVY BLUE LONG SLEEVE <br> SUNSET MASK LOGO</p></td>
+					<td><p class="price">£60</p><p class="tableText">WHITE BOILER SUIT <br> MASK DUCT TAPE</p></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="SStext">
+			<img class="linedown" src="images/lineDown.png" alt="">
+			<p>NEW APPAREL COMING SOON</p>
+			<img class="linedown" src="images/lineDown.png" alt="">
+		</div>
+	</body>
+	
+	<footer>
+		<p>&#169 2024 MASK Band UK Limited Privacy Policy | Terms of use | Cookies Policy | Cookies Settings</p>
+	</footer>
+</html>
+
+

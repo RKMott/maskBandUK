@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MASKbandUK - Music</title>
+		<link rel="stylesheet" href="stylesheets/styles.nav.css">
+		<link rel="stylesheet" href="stylesheets/homestyle.css">
+		<link rel="stylesheet" href="stylesheets/stylesheet.css">
+		<link rel="stylesheet" href="stylesheets/musicstyle.css">
+		<script>
+			// opens us the nav menu when hamburger icon is clicked
+			function dropdownMenu() {
+				var x = document.getElementById("navbutton");
+				if (x.className === "navlist") {
+					x.className += "responsive";
+				}
+				else {
+					x.className = "navlist";
+				}
+			}
+			// opens us the information for Addiction and Dependency Vinyl
+			function AnDopen() {
+				var AnD = document.getElementById("openAnD");
+				if (AnD.className === "AnD") {
+					AnD.className += "open";
+				}
+				else {
+					AnD.className = "AnD";
+				}
+			}
+			// opens us the information for Scars Vinyl
+			function SCARopen() {
+				var SCAR = document.getElementById("openSCAR");
+				if (SCAR.className === "SCAR") {
+					SCAR.className += "open";
+				}
+				else {
+					SCAR.className = "SCAR";
+				}
+			}
+			// opens us the information for Come Home Vinyl
+			function CHopen() {
+				var ch = document.getElementById("openCH");
+				if (ch.className === "CH") {
+					ch.className += "open";
+				}
+				else {
+					ch.className = "CH";
+				}
+			}
+			// opens us the information for blind Vinyl
+			function blindopen() {
+				var blind = document.getElementById("openblind");
+				if (blind.className === "blind") {
+					blind.className += "open";
+				}
+				else {
+					blind.className = "blind";
+				}
+			}
+			// closes information for the Addiction and Dependency vinyl
+			function closeAnD() {
+				var AnD = document.getElementById("openAnD");
+				if (AnD.className === "AnDopen") {
+					AnD.className = "AnD";
+				}
+				else {
+					AnD.className = "AnDopen";
+				}
+			}
+			// closes information for the Scars vinyl
+			function closeSCAR() {
+				var SCAR = document.getElementById("openSCAR");
+				if (SCAR.className === "SCARopen") {
+					SCAR.className = "SCAR";
+				}
+				else {
+					SCAR.className = "SCARopen";
+				}
+			}
+			// closes information for the Come Home vinyl
+			function closeCH() {
+				var ch = document.getElementById("openCH");
+				if (ch.className === "CHopen") {
+					ch.className = "CH";
+				}
+				else {
+					ch.className = "CHopen";
+				}
+			}
+			// closes information for the Blind vinyl
+			function closeblind() {
+				var blind = document.getElementById("openblind");
+				if (blind.className === "blindopen") {
+					blind.className = "blind";
+				}
+				else {
+					blind.className = "blindopen";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<!-- Main nav bar -->
+		<nav>
+			<div class="navleft">
+				<a href="index.html">HOME</a>
+				<a href="music.html">MUSIC</a>
+				<a href="apparel.html">APPAREL</a>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+				<img class="maskTextLogo" src="images/masktxt.png" alt="MASK band text logo.">
+			<div class="navright">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<a href="live.html">LIVE</a>
+				<a href="about.html">ABOUT</a>
+				<a href="signUp.html">SIGN UP</a>
+			</div>
+		<!-- Ham Burger button for small nav -->	
+			<div class="smallnav">
+				<img class="navburger" onClick="dropdownMenu()" src="images/HamBurger.png" alt="">
+				<img class="smalllogo" src="images/masklogo.img-text.small.png" alt="MASK band image and text logo, stacked side by side.">
+			</div>
+		</nav>
+		<!-- List for small nav -->
+		<div class="navlist" id="navbutton">
+			<a href="index.html">HOME</a> <br>
+			<a href="music.html">MUSIC</a> <br>
+			<a href="apparel.html">APPAREL</a> <br>
+			<a href="live.html">LIVE</a> <br>
+			<a href="about.html">ABOUT</a> <br>
+			<a href="signUp.html">SIGN UP</a> <br>
+		</div>
+		<!-- Advertisement for the bands new single -->
+		<div class="ad-home">
+			<img class="scarsart" src="images/SCARS-albumART.png" alt="The single art for SCARS by MASK. The image contains a drawn scorpion on a cream background with white border.">
+			<h3 class="scarstext" style="margin-bottom: 31px;">MASK - SCARS<br> AVAILABLE NOW</h3>
+		</div>
+		<!-- Down arrow that scrolls down to the content of the page -->
+		<a href="#scrollDown"><img class="downArrow" src="images/HamBurgerOpen.png" alt=""></a>
+		
+		<div class="content">
+		<!-- Table that allows me to better evenly distribute the contents of the page -->
+			<table>
+				<tr>
+					<td><img onClick="AnDopen()" id="scrollDown" class="albumArt" src="images/AnDArt.png" alt="Addiction and Dependency Art Work with vinyl slightly out of sleeve."></td>
+					<td><img onClick="SCARopen()" class="albumArt" src="images/ScarsArt.png" alt="Scars Art work with vinyl slightly out of sleeve."></td>
+				</tr>
+				
+				<tr>
+					<td><p class="price">£15</p><p class="tableText">MASK  ADDICTION AND DEPENDENCY <br> EP VINYL</p></td>
+					<td><p class="price">£9.99</p><p class="tableText">MASK  SCARS <br> SINGLE TRACK VINYL</p></td>
+				</tr>
+				
+				<tr>
+					<td><img onClick="CHopen()" class="albumArt" src="images/ComeHomeArt.png" alt="Come Home art work with vinyl slightly out of sleeve."></td>
+					<td><img onClick="blindopen()" class="albumArt" src="images/BlindArt.png" alt="Blind album art with vinyl slightly out of sleeve."></td>
+				</tr>
+				
+				<tr>
+					<td><p class="price">£9.99</p><p class="tableText">MASK  COME HOME <br> SINGLE TRACK VINYL</p></td>
+					<td><p class="price">£6.99</p><p class="tableText">MASK  BLIND <br> SINGLE TRACK VINYL</p></td>
+				</tr>
+				
+			</table>
+			
+			<div class="SStext">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<p>STREAMING SERVICES</p>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+			
+			<div class="musicIconDiv">
+				<iframe
+  					title="Spotify player for MASK Band"
+  					style="border-radius:12px"
+					src="https://open.spotify.com/embed/artist/6ZLBaAFBpjlth8PaOqosE7?utm_source=generator"
+  					width="70%"
+  					height="352"
+  					frameborder="0"
+  					allowfullscreen=""
+  					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  					loading="lazy"
+  					role="application"
+  					aria-label="Embedded Spotify player for MASK Band">
+				</iframe>
+			</div>
+		</div>
+		<!-- Hidden information boxes that can be shown by clicking on each ablum art -->
+		<div class="AnD" id="openAnD">
+			<a href="#" onClick="closeAnD()">X</a>
+			<h3>Addiction and Dependency</h3>
+			<p>Track Listing</p>
+			<p>1. Live in Fear <br> 2. MASK <br> 3. Mani <br> 4. Better Off <br> 5. Sunshine</p>
+			<p>Song Writing: Bradley Arnold and Reece Mott <br> Production: Ben 'Faz' Farestvedt <br> Artwork: Laura Tucker</p>
+		</div>
+		
+		<div class="SCAR" id="openSCAR">
+			<a href="#" onClick="closeSCAR()">X</a>
+			<h3>SCARS</h3>
+			<p>Track Listing</p>
+			<p>1. SCARS</p>
+			<p>Song Writing: Bradley Arnold and Reece Mott <br> Production: Jake Stanton <br> Artwork: Bradley Arnold</p>
+		</div>
+		
+		<div class="CH" id="openCH">
+			<a href="#" onClick="closeCH()">X</a>
+			<h3>Come Home</h3>
+			<p>Track Listing</p>
+			<p>1. Please <br> 2. Come Home</p>
+			<p>Song Writing: Bradley Arnold and Reece Mott <br> Production: Jake Stanton <br> Artwork: Victoria Boston</p>
+		</div>
+		
+		<div class="blind" id="openblind">
+			<a href="#" onClick="closeblind()">X</a>
+			<h3>Blind</h3>
+			<p>Track Listing</p>
+			<p>1. Blind</p>
+			<p>Song Writing: Bradley Arnold and Reece Mott <br> Production: Aidan Barnes <br> Artwork: Laura Tucker</p>
+		</div>
+	</body>
+	
+	<footer>
+		<p>&#169 2024 MASK Band UK Limited Privacy Policy | Terms of use | Cookies Policy | Cookies Settings</p>
+	</footer>
+</html>

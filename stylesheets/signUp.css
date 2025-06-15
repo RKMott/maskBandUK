@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/* Styling and formatting for form container */
+.signUp {
+	background-color: #DBDBDB;
+	width: 30%;
+	height: 380px;
+	border: medium #000000 solid;
+	margin: 0px 100px 3px;
+	padding: 0px 15px;
+}
+/* Adding font for text elements */
+.font {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+/* Formatting for google maps */
+.map {
+	width: 490px;
+	height: 200px;
+	margin-left: 102px;
+}
+/* hidding message until completion of form  */
+.finished {
+	display: none;
+}
+/*thank you message text formatting */
+.finishedyes p {
+	color: white;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+/* Formatting for thank you message */
+.finishedyes {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 0, 0.9);
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	display: block;
+}
+/* Media control formatting, adjusts element attributes to center on page */
+@media (max-width: 1455px){
+	.signUp {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
+		min-width: 400px;
+	}
+	
+	.mapBox {
+		width: 100%;
+	}
+	
+	.map {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 434px;
+		height: 300px;
+	}
+}

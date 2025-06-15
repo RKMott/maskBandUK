@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+.music-content{
+	width: 100%;
+	margin-top: 250px;
+}
+/* formatting for youtube videos */
+.vod {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+/* styling for table text */
+.tableText {
+	font-family: 'night_shift_-_demoregular';
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+/* formatting main container */
+.content {
+	margin-top: 5px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.61);
+}
+/* styling for heading text */
+.SStext {
+	font-family: 'night_shift_-_demoregular';
+	color: white;
+	font-size: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+/* aligns .linedown with text */
+.SStext img {
+	width: 50px;
+	margin: 0;
+}
+/* provides transparent black background for footer to match main content */
+footer {
+	background-color: rgba(0,0,0,0.61);
+}
+
+.small {
+	display: none;
+}
+
+.fb-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.fb-page {
+  width: 100%;
+  max-width: 500px; /* Adjust this to your liking */
+}
+
+.fb-xfbml-parse-ignore {
+  text-align: center;
+}
+
+/* media for smaller window size, allows content to fit better on screen */
+@media (max-width: 1150px){
+	.wide {
+		display: none;
+	}
+	
+	.small {
+		display: block;
+		width: 100%;
+		align-content: center;
+		padding-left: auto;
+		padding-right: auto;
+	}
+}
+

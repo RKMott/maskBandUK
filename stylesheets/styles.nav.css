@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+/* provides smooth scrolling when using buttons to navigate page */
+html {
+	scroll-behavior: smooth;
+}
+/* Sets up the body for all pages and provides the background image that follows the page as the users scrolls. A black background has been set incase the user expands the webpage in a weird way that the image can't provide for */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+  	background-image: url("images/background.png");
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+/* Sets up the main navigation bar so that all contents in wrapped at the top and center to the screen, providing a satisfying visual */
+nav {
+	width: 100%;
+	height: 100px;
+	display:flex; 
+ 	flex-direction: row; 
+ 	flex-wrap: nowrap; 
+ 	justify-content: space-around;
+	margin: 0px, 20%;
+}
+/* Providing decorations for the nav left */
+.navleft a {
+	text-decoration: none;
+	color: white;
+	font-family: 'night_shift_-_demoregular';
+	padding: 10px;
+	font-size: 40px;
+}
+/* Providing decorations for the nav right */
+.navright a {
+	text-decoration: none;
+	color: white;
+	font-family: 'night_shift_-_demoregular';
+	padding: 10px;
+	font-size: 40px;
+}
+/* Stylising the small white lines at the end of nav left and nav right */
+.linedown {
+	height: 60px;
+	margin-top: 20px;
+	margin-bottom: -20px;
+}
+/* Formatting band logo in the center */
+.maskTextLogo {
+	height: 400px;
+}
+/* Hides logo for small navigation when website is in desktop mode */
+.smalllogo {
+	display: none;
+}
+/* Footer styling and positioning */
+footer {
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: absolute;
+	text-shadow: 0 0 5px black;
+}
+/* Following three commands hiding elements of small nav */
+.navburger {
+	display: none;
+}
+
+.smallnav {
+	display: none;
+}
+
+.navlist {
+	display: none;
+}
+/* Adds a hover effect to the main nav to better highlight the button the user is hovering over */
+.navleft a:hover {
+	color: #FF0004;
+	transition-duration: 0.2s;
+	text-shadow: 0 0 5px #ffffff;
+}
+/* Adds a hover effect to the main nav to better highlight the button the user is hovering over */
+.navright a:hover {
+	color: #FF0004;
+	transition-duration: 0.2s;
+	text-shadow: 0 0 5px #ffffff;
+}
+/* Hiding the nav list for small nav */
+.navlistresponsive {
+		display: none;
+}
+/* When the screen size reaches 1455px the navigation bar will adjust to the small nav design to better fit the page size */
+@media (max-width: 1455px){
+	.navleft {
+		display: none;
+	}
+	
+	.navright {
+		display: none;
+	}
+	
+	.maskTextLogo {
+		display: none;
+	}
+	
+	.linedown {
+		display: none;
+	}
+	
+	.smalllogo {
+		display: inline-block;
+		width: 100px;
+		float: right;
+	}
+	
+	.smallnav {
+		display: inline-block;
+		width: 100%;
+		margin: 10px;
+		margin-bottom: 5px;
+	}
+	
+	.navburger {
+		display: inline-block;
+		width: 100px;
+		margin: 15px;
+		margin-bottom: 0px;
+		transform: translate(-10px, -25px);
+	}
+	
+	.navburger:hover {
+		cursor: pointer;
+	}
+	
+	.navlistresponsive a {
+		text-decoration: none;
+		color: white;
+		font-size: 40px;
+		padding: 5px 0px 0px 30px;
+		font-family: 'night_shift_-_demoregular';
+		margin-bottom: 10px;
+	}
+	
+	.navlistresponsive {
+		display: block;
+		width: 40%;
+		margin-top: 50px;
+	}
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Permissions-Policy" content="encrypted-media=*">
+		<title>MASKbandUK - Live</title>
+		<link rel="stylesheet" href="stylesheets/styles.nav.css">
+		<link rel="stylesheet" href="stylesheets/homestyle.css">
+		<link rel="stylesheet" href="stylesheets/stylesheet.css">
+		<link rel="stylesheet" href="stylesheets/livestyle.css">
+		<script>
+			// opens us the nav menu when hamburger icon is clicked
+			function dropdownMenu() {
+				var x = document.getElementById("navbutton");
+				if (x.className === "navlist") {
+					x.className += "responsive";
+				}
+				else {
+					x.className = "navlist";
+				}
+			}
+		</script>
+		
+		<script>
+  			window.fbAsyncInit = function () {
+    			FB.init({
+      				xfbml: true,
+      				version: 'v22.0'
+    			});
+
+    		// Force re-parse of plugins after load
+    		FB.XFBML.parse();
+  		};
+		</script>
+	</head>
+
+	<body>
+		
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0"></script>
+		
+	<!-- Main nav bar -->
+		<nav>
+			<div class="navleft">
+				<a href="index.html">HOME</a>
+				<a href="music.html">MUSIC</a>
+				<a href="apparel.html">APPAREL</a>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+				<img class="maskTextLogo" src="images/masktxt.png" alt="MASK band text logo.">
+			<div class="navright">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<a href="live.html">LIVE</a>
+				<a href="about.html">ABOUT</a>
+				<a href="signUp.html">SIGN UP</a>
+			</div>
+	<!-- Ham Burger button for small nav -->		
+			<div class="smallnav">
+				<img class="navburger" onClick="dropdownMenu()" src="images/HamBurger.png" alt="">
+				<img class="smalllogo" src="images/masklogo.img-text.small.png" alt="MASK band image and text logo, stacked side by side.">
+			</div>
+		</nav>
+	<!-- List for small nav -->	
+		<div class="navlist" id="navbutton">
+			<a href="index.html">HOME</a> <br>
+			<a href="music.html">MUSIC</a> <br>
+			<a href="apparel.html">APPAREL</a> <br>
+			<a href="live.html">LIVE</a> <br>
+			<a href="about.html">ABOUT</a> <br>
+			<a href="signUp.html">SIGN UP</a> <br>
+		</div>
+	<!-- Advertisement for the bands new single -->	
+		<div class="ad-home">
+			<img class="scarsart" src="images/SCARS-albumART.png" alt="The single art for SCARS by MASK. The image contains a drawn scorpion on a cream background with white border.">
+			<h3 class="scarstext" style="margin-bottom: 31px;">MASK - SCARS<br> AVAILABLE NOW</h3>
+		</div>
+	<!-- Down arrow that scrolls down to the content of the page -->	
+		<a href="#scrollDown"><img class="downArrow" src="images/HamBurgerOpen.png" alt=""></a>
+	<!-- Table that allows me to better evenly distribute the contents of the page -->	
+		<div class="content" id="scrollDown">
+			<div class="SStext">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<p>LIVE PERFORMANCE</p>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+			
+			<table class="wide" style="width: 100%;">
+				<tr>
+					<td><iframe class="vod" width="560" height="315" src="https://www.youtube.com/embed/8WB8rjvRySA?si=G4VALamAobe0JTJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+					<td><iframe class="vod" width="560" height="315" src="https://www.youtube.com/embed/ORq8XntejuY?si=tDOZgqrmND_fvwhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+				</tr>
+			</table>
+			
+			<table class="small" style="width: 100%;">
+				<tr>
+					<td><iframe class="vod" width="560" height="315" src="https://www.youtube.com/embed/8WB8rjvRySA?si=G4VALamAobe0JTJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+				</tr
+				<tr>
+					<td><iframe class="vod" width="560" height="315" src="https://www.youtube.com/embed/ORq8XntejuY?si=tDOZgqrmND_fvwhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+				</tr>
+			</table>
+			
+			<div class="SStext">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<p>MUSIC VIDEOS</p>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+			
+			<table class="wide" style="width: 100%;">	
+				<tr>
+					<td><iframe class="vod" width="560" height="315" src="https://www.youtube.com/embed/HfNVxFgloA8?si=MDP7O5AevJu8MAD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+					<td><iframe class="vod" width="560" height="315" src="https://www.youtube.com/embed/iGMArpfTDig?si=JOEXEEE1QFy5zODu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+				</tr>
+			</table>
+			
+			<table class="small" style="width: 100%;">	
+				<tr>
+					<td><iframe class="vod" width="560" height="315" src="https://www.youtube.com/embed/HfNVxFgloA8?si=MDP7O5AevJu8MAD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+				</tr>
+				<tr>
+					<td><iframe class="vod" width="560" height="315" src="https://www.youtube.com/embed/iGMArpfTDig?si=JOEXEEE1QFy5zODu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+				</tr>
+			</table>
+			
+			<div class="SStext">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<p>Live Facebook Feed</p>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+			
+			<div class="fb-wrapper">
+				<div class="fb-page"
+	    			data-href="https://www.facebook.com/MASKBandUK/?locale=en_GB"
+	    			data-tabs="timeline"
+	    			data-width="500"
+	    			data-height="800"
+	    			data-small-header="false"
+	    			data-adapt-container-width="true"
+	    			data-hide-cover="false"
+	    			data-show-facepile="true">
+	    
+	    			<blockquote cite="https://www.facebook.com/MASKBandUK/?locale=en_GB" class="fb-xfbml-parse-ignore">
+	      				<a href="https://www.facebook.com/MASKBandUK/?locale=en_GB">MASK</a>
+	    			</blockquote>
+	  			</div>
+	
+	  			<script async defer crossorigin="anonymous"
+	    			src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0">
+  				</script>
+			</div>
+		</div>
+	</body>
+	
+	<footer style="padding-top: 50px;">
+		<p>&#169 2024 MASK Band UK Limited Privacy Policy | Terms of use | Cookies Policy | Cookies Settings</p>
+	</footer>
+</html>

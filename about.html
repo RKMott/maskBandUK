@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MASKbandUK - Bio</title>
+		<link rel="stylesheet" href="stylesheets/styles.nav.css">
+		<link rel="stylesheet" href="stylesheets/homestyle.css">
+		<link rel="stylesheet" href="stylesheets/stylesheet.css">
+		<link rel="stylesheet" href="stylesheets/biostyle.css">
+		<script>
+			// opens us the nav menu when hamburger icon is clicked
+			function dropdownMenu() {
+				var x = document.getElementById("navbutton");
+				if (x.className === "navlist") {
+					x.className += "responsive";
+				}
+				else {
+					x.className = "navlist";
+				}
+			}
+			
+			function fposition1() {
+				document.slide.src = "images/longSleeve1.png";
+			}
+			function fposition2() {
+				document.slide.src = "images/longSleeve2.png";
+			}
+			function fposition3() {
+				document.slide2.src = "images/boilersuit1.png";
+			}
+			function fposition4() {
+				document.slide2.src = "images/boilersuit2.png";
+			}
+		</script>
+	</head>
+
+	<body>
+	<!-- Main nav bar -->
+		<nav>
+			<div class="navleft">
+				<a href="index.html">HOME</a>
+				<a href="music.html">MUSIC</a>
+				<a href="apparel.html">APPAREL</a>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+				<img class="maskTextLogo" src="images/masktxt.png" alt="MASK band text logo.">
+			<div class="navright">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<a href="live.html">LIVE</a>
+				<a href="about.html">ABOUT</a>
+				<a href="signUp.html">SIGN UP</a>
+			</div>
+	<!-- Ham Burger button for small nav -->		
+			<div class="smallnav">
+				<img class="navburger" onClick="dropdownMenu()" src="images/HamBurger.png" alt="">
+				<img class="smalllogo" src="images/masklogo.img-text.small.png" alt="MASK band image and text logo, stacked side by side.">
+			</div>
+		</nav>
+	<!-- List for small nav -->		
+		<div class="navlist" id="navbutton">
+			<a href="index.html">HOME</a> <br>
+			<a href="music.html">MUSIC</a> <br>
+			<a href="apparel.html">APPAREL</a> <br>
+			<a href="live.html">LIVE</a> <br>
+			<a href="about.html">ABOUT</a> <br>
+			<a href="signUp.html">SIGN UP</a> <br>
+		</div>
+	<!-- Advertisement for the bands new single -->		
+		<div class="ad-home">
+			<img class="scarsart" src="images/SCARS-albumART.png" alt="The single art for SCARS by MASK. The image contains a drawn scorpion on a cream background with white border.">
+			<h3 class="scarstext" style="margin-bottom: 31px;">MASK - SCARS<br> AVAILABLE NOW</h3>
+		</div>
+	<!-- Down arrow that scrolls down to the content of the page -->	
+		<a href="#scrollDown"><img class="downArrow" src="images/HamBurgerOpen.png" alt=""></a>
+		
+		<div class="content">
+			<h1 id="scrollDown">MASK</h1>
+			
+			<p class="des">MASK are a two piece noise rock duo from the Bedford/ Milton Keynes area. Taking influences from Death From Above 2979, '68, and advertise themselves as a "heavier version of Royal Blood". The bands hard, groovy riffs mixed with their big atmospheric sound, original yet nostalgic aesthetic, memorable tunes and dedication to their performance live makes them a band to see this year.</p>
+			
+			<img class="collage" src="images/photocollage.png" alt="Collage of photos, with a mix of live performance, promotional shoots, and music video photographs from the band MASK.">
+			
+			<div class="bio">
+				<div class="purpose">
+					<h3>Purpose</h3>
+					<p>The purpose of this website is for preexisting fans and new customers to be able to see merchandise and music available from the band and provide links to socials and music streaming platforms to increase click through rate.</p>
+				</div>
+				
+				<div class="taraud">
+					<h3>Target Audience</h3>
+					<p>As this band is a small, local grass root band, the target audience for this band is nation wide. This being the band can take advantage of a wider reach, allowing for progressive growth in audience. It would be unreasonable for this websites target audience to be any larger than the UK due to scaling with shipment and currency conversion.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<footer>
+		<p>&#169 2024 MASK Band UK Limited Privacy Policy | Terms of use | Cookies Policy | Cookies Settings</p>
+	</footer>
+</html>
+
+

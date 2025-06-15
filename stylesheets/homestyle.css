@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+/* Provides formatting for the advert div */
+.ad-home {
+	margin-top: 5%;
+	width: 50%
+}
+/* Provides formatting for the art work for the advert */
+.scarsart {
+	width: 40%;
+ 	display: block;
+	margin: 0px auto;
+	box-shadow: 3px 3px 10px 5px black;
+	
+}
+/* Provides formatting and font styling for the advert */
+.scarstext {
+	color: white;
+	font-family: 'night_shift_-_demoregular';
+	font-size: 3.5rem;
+	text-align: center;
+	margin: 2% 0% 10px;
+	text-shadow: 0 0 5px black;
+}
+/* Formatting for the down arrow on select pages */
+.downArrow {
+	width: 9%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 120px;
+}
+/* When screen size reaches 1455px, the advert is set center screen to better suit the screen size */
+@media (max-width: 1455px){
+	.ad-home {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.scarstext {
+		font-size: 1.7rem;
+	}
+	
+	.scarsart {
+		width: 90%;
+		margin-top: 51%;
+	}
+}
+
+/* Rem has been used for specifically font sizing to allow users to modify the size of the text using google settings, providing a disability feature to thoughs with poor eye sight or other vision based disadvantages */

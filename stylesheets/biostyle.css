@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+.music-content{
+	width: 100%;
+	margin-top: 250px;
+}
+/* Formatting main container and adding transparent black background */
+.content {
+	margin-top: 5px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.61);
+	padding-top: 0.1px;
+}
+/* Formatting header for main content */
+.content h1 {
+	font-family: 'night_shift_-_demoregular';
+	font-size: 5rem;
+	margin-left: 13%;
+	text-decoration: underline;
+	color: white;
+}
+/* Formatting for bio paragraph */
+.des {
+	color: white;
+	background-color: rgba(0,0,0,0.58);
+	box-shadow: 0 0 10px 15px rgba(0,0,0,0.58);
+	font-size: 2rem;
+	padding: 0 5%;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	line-height: 2;
+}
+/* Formatting collage images */
+.collage {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* formatting div for bio text */
+.bio {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 5%;
+}
+/* Formatting for paragraph text */
+.purpose {
+	width: 40%;
+	color: white;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 1.5rem;
+}
+/* Formatting for paragraph text */
+.taraud {
+	width: 40%;
+	color: white;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 1.5rem;
+}
+/* formatting for header */
+.purpose h3 {
+	font-family: 'night_shift_-_demoregular';
+	text-decoration: underline;
+}
+/* formatting for header */
+.taraud h3 {
+	font-family: 'night_shift_-_demoregular';
+	text-decoration: underline;
+}
+/* provides transparent black background for footer */
+footer {
+	background-color: rgba(0,0,0,0.61);
+}
+
+/* media for smaller screen size, reshuffles images and font sizing to better fit the page */
+@media (max-width: 1172px){
+	.bio {
+		display: inline-block;
+		width: 90%;
+	}
+	
+	.bio div {
+		display: inline-block;
+		margin-left: auto;
+		margin: 10px 6%;
+		width: 90%;
+	}
+	
+	.des {
+		font-size: 1.5rem;
+	}
+}

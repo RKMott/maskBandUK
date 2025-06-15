@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MASKbandUK - HOME</title>
+		<link rel="stylesheet" href="stylesheets/styles.nav.css">
+		<link rel="stylesheet" href="stylesheets/homestyle.css">
+		<link rel="stylesheet" href="stylesheets/stylesheet.css">
+		<script>
+			// opens us the nav menu when hamburger icon is clicked
+			function dropdownMenu() {
+				var x = document.getElementById("navbutton");
+				if (x.className === "navlist") {
+					x.className += "responsive";
+				}
+				else {
+					x.className = "navlist";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+	<!-- nav bar menu -->
+		<nav>
+			<div class="navleft">
+				<a href="index.html">HOME</a>
+				<a href="music.html">MUSIC</a>
+				<a href="apparel.html">APPAREL</a>
+				<img class="linedown" src="images/lineDown.png" alt="">
+			</div>
+				<img class="maskTextLogo" src="images/masklogo.img-text.png" alt="MASK band image and text logo, stacked on top of one another.">
+			<div class="navright">
+				<img class="linedown" src="images/lineDown.png" alt="">
+				<a href="live.html">LIVE</a>
+				<a href="about.html">ABOUT</a>
+				<a href="signUp.html">SIGN UP</a>
+			</div>
+	<!-- Small nav bar menu button -->		
+			<div class="smallnav">
+				<img class="navburger" onClick="dropdownMenu()" src="images/HamBurger.png" alt="">
+				<img class="smalllogo" src="images/masklogo.img-text.small.png" alt="MASK band image and text logo, stacked side by side.">
+			</div>
+		</nav>
+	<!-- List for small nav bar menu -->	
+		<div class="navlist" id="navbutton">
+			<a href="index.html">HOME</a> <br>
+			<a href="music.html">MUSIC</a> <br>
+			<a href="apparel.html">APPAREL</a> <br>
+			<a href="live.html">LIVE</a> <br>
+			<a href="about.html">ABOUT</a> <br>
+			<a href="signUp.html">SIGN UP</a> <br>
+		</div>
+	<!-- Scars advert -->	
+		<div class="ad-home">
+			<img class="scarsart" src="images/SCARS-albumART.png" alt="The single art for SCARS by MASK. The image contains a drawn scorpion on a cream background with white border.">
+			<h3 class="scarstext" style="margin-bottom: 100px;">MASK - SCARS<br> AVAILABLE NOW</h3>
+		</div>
+		
+	</body>
+	
+	<footer>
+		<p>&#169 2024 MASK Band UK Limited Privacy Policy | Terms of use | Cookies Policy | Cookies Settings</p>
+	</footer>
+</html>
+
+

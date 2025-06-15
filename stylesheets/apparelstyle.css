@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+.music-content{
+	width: 100%;
+	margin-top: 250px;
+}
+/* stylises text within main container */
+.tableText {
+	font-family: 'night_shift_-_demoregular';
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+/* formates main div for content */
+.content {
+	margin-top: 5px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.61);
+}
+/* Formates text "New apparel coming soon" */
+.SStext {
+	font-family: 'night_shift_-_demoregular';
+	color: white;
+	font-size: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.61);
+}
+/* Aligns .linedown with text */
+.SStext img {
+	width: 50px;
+	margin: 0;
+}
+/* formates images in table */
+.content img {
+	width: 90%;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	box-shadow: 0px 0px 1px 0.5px white;
+}
+/* Stylises buttons below images for slide show */
+.content a {
+	text-decoration: none;
+	color: #7B7B7B;
+	font-size: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Centers text in table */
+.content table tr td {
+	text-align: center;
+}
+/*Styling for the pricing of merchandise*/
+.price {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: white;
+	font-size: 1.7rem;
+}
+/*gives footer a transparent black background */
+footer {
+	background-color: rgba(0,0,0,0.61);
+}

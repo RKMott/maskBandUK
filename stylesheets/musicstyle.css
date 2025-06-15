@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+/* The following four commands format the text and image formatting for the table contents */
+.music-content{
+	width: 100%;
+	margin-top: 250px;
+}
+
+.albumArt {
+	width: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+/* Changes curser to pointer when hovering over clickable images*/
+.albumArt:hover {
+	cursor: pointer;
+}
+
+.tableText {
+	font-family: 'night_shift_-_demoregular';
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+
+.content {
+	margin-top: 5px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.61);
+}
+/* Formates the text titling the music platform icons */
+.SStext {
+	font-family: 'night_shift_-_demoregular';
+	color: white;
+	font-size: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.SStext img {
+	width: 50px;
+	margin: 0;
+}
+/* Formates the various platform icons at the bottom of the screen */
+.musicIcon {
+	width: 30%;
+	margin: 0 35% 20px;
+}
+/* Formats the div container for the various platform icons at the bottom of the screen */
+.musicIconDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Hides info box */
+.AnD {
+	display: none;
+}
+/* Decorates and formates the info box */
+.AnDopen {
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(172,172,172,1.00);
+	padding: 20px;
+	border-radius: 10px;
+	z-index: 1000;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	border: medium solid black;
+}
+/*Decorates the header text for the info box */
+.AnDopen h3 {
+	font-size: 1.8rem;
+	font-family: 'night_shift_-_demoregular';
+}
+/* Decorates the info close button */
+.AnDopen a {
+	text-decoration: none;
+	color: red;
+	font-size: 2rem;
+	float: right;
+}
+/* Hides info box */
+.SCAR {
+	display: none;
+}
+/* Decorates and formates the info box */
+.SCARopen {
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(172,172,172,1.00);
+	padding: 20px;
+	border-radius: 10px;
+	z-index: 1000;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+/*Decorates the header text for the info box */
+.SCARopen h3 {
+	font-size: 1.8rem;
+	font-family: 'night_shift_-_demoregular';
+}
+/* Decorates the info close button */
+.SCARopen a {
+	text-decoration: none;
+	color: red;
+	font-size: 2rem;
+	float: right;
+}
+/* Hides info box */
+.CH {
+	display: none;
+}
+/* Decorates and formates the info box */
+.CHopen {
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(172,172,172,1.00);
+	padding: 20px;
+	border-radius: 10px;
+	z-index: 1000;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+/*Decorates the header text for the info box */
+.CHopen h3 {
+	font-size: 1.8rem;
+	font-family: 'night_shift_-_demoregular';
+}
+/* Decorates the info close button */
+.CHopen a {
+	text-decoration: none;
+	color: red;
+	font-size: 2rem;
+	float: right;
+}
+/* Hides info box */
+.blind {
+	display: none;
+}
+/* Decorates and formates the info box */
+.blindopen {
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(172,172,172,1.00);
+	padding: 20px;
+	border-radius: 10px;
+	z-index: 1000;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+/*Decorates the header text for the info box */
+.blindopen h3 {
+	font-size: 1.8rem;
+	font-family: 'night_shift_-_demoregular';
+}
+/* Decorates the info close button */
+.blindopen a {
+	text-decoration: none;
+	color: red;
+	font-size: 2rem;
+	float: right;
+}
+/* Styling for the pricing */
+.price {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: white;
+	font-size: 1.7rem;
+	text-align: center;
+}
+
+footer {
+	background-color: rgba(0,0,0,0.61);
+}
