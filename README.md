@@ -50,8 +50,8 @@ This website was created for educational purposes as part of an academic assignm
 2. Open 'index.html' in any modern web browser
 3. Explore the site and interact with its features
 
-```
 bash
+```
 git clone https://github.com/RKMott/maskBandUK.git
 cd maskBandUK
 open index.html
